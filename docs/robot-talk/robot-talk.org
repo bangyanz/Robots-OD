@@ -1,0 +1,98 @@
+
+* What is ROS?
+** Basics
+
+  - Robot Operating System
+  - Originally developed at Stanford in 2007
+  - Since 2008, primarily developed at Willow Garage
+
+** Vocabulary
+
+   - Node :: Process that perform computation.
+   - Message :: The way in which nodes communicate to one another. It
+                is a strictly typed data structure.
+   Graph based architecture. Some words from graphs.
+   - Topic :: A string which essentially labels what the data is
+              about. Nodes can subscribe and publish to topics.
+   - Service :: Synchronous transaction. Always a request and
+                response. only one service by a given name.
+
+** Architecture
+
+    - Peer-to-peer: designed to have many processes running,
+      potentially on different hosts all connected at runtime. This is
+      managed by a special master node.
+      - The ROS Master provides naming and registration services to
+        the rest of the nodes in the ROS system.
+      - It tracks publishers and subscribers to topics as well as
+        services.
+      - The role of the Master is to enable individual ROS nodes to
+        locate one another. Once these nodes have located each other
+        they communicate with each other peer-to-peer.
+      - The Master also provides the Parameter Server.
+      - The Master is most commonly run using the roscore command,
+        which loads the ROS Master along with other essential
+        components.
+
+    - Multilingual:
+      - ROS specification is at the messaging layer, not any deeper.
+      - People have their own language preferences, ROS supports that.
+      - Currently C++, Python, Octave and Lisp are supported. Java on
+        the way.
+      - The point is to implement the messaging layer natively in the
+        language, not just wrap around C.
+    - Tools-based:
+      - Follows the Unix design of many small tools.
+      - Less efficient
+      - More stable and easier to manage the complexity
+    - Thin:
+      - The ideal is to create stand-alone libraries that have no
+        dependencies on ROS.
+      - most robotics code is too tied into the underlying architecture
+      - This means that code reuse is easier.
+      - Easier to test the code as well
+
+* Why ROS?
+** Debugging
+
+   - ROS is designed to be modular to only the nodes being tested need
+     to be taken down. ROS handles the graph modifications.
+
+** Logging & Playback
+
+   - Easy way to log all sensor data for playback and use within
+     multiple algorithms for testing.
+
+** Packaged Subsystems
+
+   - Big chunks of code for well-understood domains that are
+     reusable. Save times by not having to implement a localization
+     system on each new robot.
+
+** Visualizations & Monitoring
+
+   - In robotics, it can be difficult to visualize data by printing
+     it to the screen. ROS has rviz which is a visualization
+     program. You can use it to see data such as laser scans, mapping,
+     odometry or point cloud data.
+   - Possible to get good text info from rostopic and filter it using
+     grep, sed and awk.
+
+* Code Example
+
+  - Create node which takes laser messages and sends a message to the
+    wheels.
+
+* Getting Involved
+** Install ROS
+
+   - Ubuntu
+   - Virtual Box
+
+** Join the Mailing list
+
+   - https://mailman.cs.bham.ac.uk/mailman/listinfo/robot-club
+
+** Check out the code
+
+   - ~svn checkout https://codex.cs.bham.ac.uk/svn/nah/robotclub~
