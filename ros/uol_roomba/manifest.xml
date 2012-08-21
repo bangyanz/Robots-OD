@@ -1,0 +1,18 @@
+<package>
+  <description brief="uol_roomba">
+
+     uol_roomba
+
+  </description>
+  <author>RoboLab2</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/uol_roomba</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="openni"/>
+  <depend package="irobot_create_2_1"/>
+
+</package>
+
+
