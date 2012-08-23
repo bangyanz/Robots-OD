@@ -2,7 +2,7 @@
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
-/home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/RoombaMove.dir
+/home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/RoombaController.dir
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/clean-test-results.dir
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/rosbuild_precompile.dir
 /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/rosbuild_premsgsrvgen.dir

@@ -174,38 +174,38 @@ clean: CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/RoombaMove.dir
+# Target rules for target CMakeFiles/RoombaController.dir
 
 # All Build rule for target.
-CMakeFiles/RoombaMove.dir/all: CMakeFiles/rosbuild_precompile.dir/all
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/depend
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/build
+CMakeFiles/RoombaController.dir/all: CMakeFiles/rosbuild_precompile.dir/all
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/depend
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles  1
-	@echo "Built target RoombaMove"
-.PHONY : CMakeFiles/RoombaMove.dir/all
+	@echo "Built target RoombaController"
+.PHONY : CMakeFiles/RoombaController.dir/all
 
 # Include target in all.
-all: CMakeFiles/RoombaMove.dir/all
+all: CMakeFiles/RoombaController.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/RoombaMove.dir/rule: cmake_check_build_system
+CMakeFiles/RoombaController.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RoombaMove.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RoombaController.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles 0
-.PHONY : CMakeFiles/RoombaMove.dir/rule
+.PHONY : CMakeFiles/RoombaController.dir/rule
 
 # Convenience name for target.
-RoombaMove: CMakeFiles/RoombaMove.dir/rule
-.PHONY : RoombaMove
+RoombaController: CMakeFiles/RoombaController.dir/rule
+.PHONY : RoombaController
 
 # clean rule for target.
-CMakeFiles/RoombaMove.dir/clean:
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/clean
-.PHONY : CMakeFiles/RoombaMove.dir/clean
+CMakeFiles/RoombaController.dir/clean:
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/clean
+.PHONY : CMakeFiles/RoombaController.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/RoombaMove.dir/clean
+clean: CMakeFiles/RoombaController.dir/clean
 .PHONY : clean
 
 #=============================================================================

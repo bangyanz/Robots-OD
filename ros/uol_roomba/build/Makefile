@@ -148,17 +148,17 @@ ROSBUILD_gensrv_lisp/fast:
 .PHONY : ROSBUILD_gensrv_lisp/fast
 
 #=============================================================================
-# Target rules for targets named RoombaMove
+# Target rules for targets named RoombaController
 
 # Build rule for target.
-RoombaMove: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 RoombaMove
-.PHONY : RoombaMove
+RoombaController: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RoombaController
+.PHONY : RoombaController
 
 # fast build rule for target.
-RoombaMove/fast:
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/build
-.PHONY : RoombaMove/fast
+RoombaController/fast:
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/build
+.PHONY : RoombaController/fast
 
 #=============================================================================
 # Target rules for targets named clean-test-results
@@ -304,19 +304,19 @@ tests/fast:
 .PHONY : tests/fast
 
 # target to build an object file
-src/RoombaMove.o:
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/src/RoombaMove.o
-.PHONY : src/RoombaMove.o
+src/RoombaController.o:
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/src/RoombaController.o
+.PHONY : src/RoombaController.o
 
 # target to preprocess a source file
-src/RoombaMove.i:
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/src/RoombaMove.i
-.PHONY : src/RoombaMove.i
+src/RoombaController.i:
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/src/RoombaController.i
+.PHONY : src/RoombaController.i
 
 # target to generate assembly for a file
-src/RoombaMove.s:
-	$(MAKE) -f CMakeFiles/RoombaMove.dir/build.make CMakeFiles/RoombaMove.dir/src/RoombaMove.s
-.PHONY : src/RoombaMove.s
+src/RoombaController.s:
+	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/src/RoombaController.s
+.PHONY : src/RoombaController.s
 
 # Help Target
 help:
@@ -328,7 +328,7 @@ help:
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
-	@echo "... RoombaMove"
+	@echo "... RoombaController"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
@@ -342,9 +342,9 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
-	@echo "... src/RoombaMove.o"
-	@echo "... src/RoombaMove.i"
-	@echo "... src/RoombaMove.s"
+	@echo "... src/RoombaController.o"
+	@echo "... src/RoombaController.i"
+	@echo "... src/RoombaController.s"
 .PHONY : help
 
 

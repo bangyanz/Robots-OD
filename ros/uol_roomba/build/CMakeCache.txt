@@ -189,7 +189,7 @@ TOOLCHAINCONFIG:FILEPATH=TOOLCHAINCONFIG-NOTFOUND
 USERCONFIG:FILEPATH=USERCONFIG-NOTFOUND
 
 //Path to a file.
-_file_name:FILEPATH=/home/robolab2/ros/Robots-OD/ros/uol_roomba/src/RoombaMove.cpp
+_file_name:FILEPATH=/home/robolab2/ros/Robots-OD/ros/uol_roomba/src/RoombaController.cpp
 
 //Value Computed by CMake
 uol_roomba_BINARY_DIR:STATIC=/home/robolab2/ros/Robots-OD/ros/uol_roomba/build
