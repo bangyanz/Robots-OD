@@ -5,12 +5,15 @@
 #include <iostream>
 #include <sstream>
 
-boolean isBumpedLeft;
-boolean isBumpedRight;
+bool isBumpedRight = false; 
+bool isBumpedLeft = false; 
 
 void chatterCallback(const irobot_create_2_1::SensorPacket msg)
 {		
-	ROS_INFO("Right: %d\tLeft: %d", msg.bumpRight, msg.bumpLeft);
+	isBumpedRight = msg.bumpRight; 
+	isBumpedLeft = msg.bumpLeft; 
+
+	ROS_INFO("Right: %d\tLeft: %d", isBumpedRight, isBumpedLeft);
 }
 
 int main(int argc, char **argv)
@@ -28,9 +31,25 @@ int main(int argc, char **argv)
 	{
 		geometry_msgs::Twist msg;
 
-		msg.linear.x = 1.0;
-		ROS_INFO("Linear X: %i", msg.linear.x);
+		if (isBumpedRight == false &&
+			isBumpedLeft == false)		
+		{
+			msg.linear.x = 0.5;
+		}		
+		else if (isBumpedRight)
+		{
+			msg.angular.z = 45;  
+		}
+		else if (isBumpedLeft)
+		{
+			msg.angular.z = -45;
+		}
 
+
+		// print info on screen 
+		ROS_INFO("Linear X: %i", msg.linear.x);
+		
+		// publish message
 		chatter_pub.publish(msg);
 
 		ros::spinOnce();

@@ -1,4 +1,4 @@
-# Install script for directory: /home/robolab2/ros/Robots-OD/ros/uol_roomba
+# Install script for directory: /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/robolab2/ros/Robots-OD/ros/uol_roomba/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/robolab2/ros/Robots-OD/ros/uol_roomba/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)
