@@ -10,8 +10,9 @@
   <url>http://ros.org/wiki/uol_roomba</url>
   <depend package="roscpp"/>
   <depend package="std_msgs"/>
-  <depend package="openni"/>
   <depend package="irobot_create_2_1"/>
+  <depend package="tf"/>
+  <depend package="geometry_msgs"/>
 
 </package>
 
