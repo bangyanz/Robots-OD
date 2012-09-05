@@ -58,6 +58,7 @@ CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/ros/wall_timer.h
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/ros/wall_timer_options.h
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/rosconsole/macros_generated.h
+CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/sensor_msgs/LaserScan.h
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/std_msgs/Header.h
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/include/std_msgs/String.h
 CMakeFiles/RoombaController.dir/src/RoombaController.o: /opt/ros/fuerte/stacks/brown_drivers/irobot_create_2_1/msg_gen/cpp/include/irobot_create_2_1/SensorPacket.h

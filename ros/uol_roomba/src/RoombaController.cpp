@@ -6,6 +6,8 @@
 #include <iostream>
 #include <sstream>
 
+#include "sensor_msgs/LaserScan.h"
+
 
 irobot_create_2_1::SensorPacket SensorPacketmsg;
 geometry_msgs::Twist Twistmsg;
@@ -15,9 +17,11 @@ bool isCharging = true;
 bool isBumpLeft = false;
 bool isBumpRight = false;
 
+bool isObjectDetected = false;
+
 
 // Different states 
-enum States 
+enum States
 {
 	Charging, 
 	NotCharging, 
@@ -103,7 +107,7 @@ void moving(Behaviours _Behaviour)
 		{
 		
 			case Forward:
-				if(isBumpLeft || isBumpRight)
+				if((isBumpLeft || isBumpRight) || isObjectDetected)
 				{
 					robotState = BumpReaction; 
 					robotBehaviour = ObstacleDetected; 
@@ -131,6 +135,9 @@ void bumpReaction(Behaviours _Behaviour)
 				Twistmsg.angular.z = -45; 
 			else if (isBumpRight)
 				Twistmsg.angular.z = 45;
+			else if (isObjectDetected)
+				Twistmsg.angular.z = 45;
+			
 
 			
 			robotState = Moving; 
@@ -154,6 +161,27 @@ void chatterCallback(const irobot_create_2_1::SensorPacket _SensorPacketmsg)
 
 
 
+void scanValues(const sensor_msgs::LaserScan laser)
+{
+    //ROS_INFO("size[%d]: ", laser.ranges.size());
+
+    for (unsigned int i=0; i<laser.ranges.size();i++)
+    {
+	if (laser.ranges[i] < 0.35 && laser.ranges[i] > 0.1)
+	{
+		isObjectDetected = true;
+        	ROS_INFO("intens[%f] [%i]: ", laser.ranges[i], i);
+		return;
+	}
+	else
+	{
+		isObjectDetected = false;
+	}
+    }
+}
+
+
+
 
 int main(int argc, char **argv)
 {
@@ -171,7 +199,10 @@ int main(int argc, char **argv)
 	// Create subscriber to listen to messages on "sensorPacket" channel
 	// 1000 messages to store before deleting older messages
 	// When a message is received invoke function 'chatterCallback' 
-	ros::Subscriber sub = n.subscribe("sensorPacket", 1000, chatterCallback);	
+	ros::Subscriber sub = n.subscribe("sensorPacket", 1000, chatterCallback);
+	
+	// Create subscriber to listen to messages on "/scan" topic
+	ros::Subscriber hokuyoSubscriber = n.subscribe("/scan", 1, scanValues);	
 
 	// Create Publisher to send messages on "cmd_vel" channel
 	// Set buffer size to 20

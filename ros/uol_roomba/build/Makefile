@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba
+CMAKE_SOURCE_DIR = /home/robolab2/ros/Robots-OD/ros/uol_roomba
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build
+CMAKE_BINARY_DIR = /home/robolab2/ros/Robots-OD/ros/uol_roomba/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build/CMakeFiles /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab3/rosSummerWork/Robots-OD/ros/uol_roomba/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robolab2/ros/Robots-OD/ros/uol_roomba/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -94,6 +94,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named LaserController
+
+# Build rule for target.
+LaserController: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LaserController
+.PHONY : LaserController
+
+# fast build rule for target.
+LaserController/fast:
+	$(MAKE) -f CMakeFiles/LaserController.dir/build.make CMakeFiles/LaserController.dir/build
+.PHONY : LaserController/fast
 
 #=============================================================================
 # Target rules for targets named ROSBUILD_genmsg_cpp
@@ -304,6 +317,21 @@ tests/fast:
 .PHONY : tests/fast
 
 # target to build an object file
+src/LaserController.o:
+	$(MAKE) -f CMakeFiles/LaserController.dir/build.make CMakeFiles/LaserController.dir/src/LaserController.o
+.PHONY : src/LaserController.o
+
+# target to preprocess a source file
+src/LaserController.i:
+	$(MAKE) -f CMakeFiles/LaserController.dir/build.make CMakeFiles/LaserController.dir/src/LaserController.i
+.PHONY : src/LaserController.i
+
+# target to generate assembly for a file
+src/LaserController.s:
+	$(MAKE) -f CMakeFiles/LaserController.dir/build.make CMakeFiles/LaserController.dir/src/LaserController.s
+.PHONY : src/LaserController.s
+
+# target to build an object file
 src/RoombaController.o:
 	$(MAKE) -f CMakeFiles/RoombaController.dir/build.make CMakeFiles/RoombaController.dir/src/RoombaController.o
 .PHONY : src/RoombaController.o
@@ -324,6 +352,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... LaserController"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_gensrv_cpp"
@@ -342,6 +371,9 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/LaserController.o"
+	@echo "... src/LaserController.i"
+	@echo "... src/LaserController.s"
 	@echo "... src/RoombaController.o"
 	@echo "... src/RoombaController.i"
 	@echo "... src/RoombaController.s"
