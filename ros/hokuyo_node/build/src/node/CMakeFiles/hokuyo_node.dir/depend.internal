@@ -4,7 +4,7 @@
 src/node/CMakeFiles/hokuyo_node.dir/hokuyo_node.o
  ../cfg/cpp/hokuyo_node/HokuyoConfig.h
  ../include/hokuyo/hokuyo.h
- /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/node/hokuyo_node.cpp
+ /home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/node/hokuyo_node.cpp
  /opt/ros/fuerte/include/XmlRpc.h
  /opt/ros/fuerte/include/XmlRpcClient.h
  /opt/ros/fuerte/include/XmlRpcDecl.h

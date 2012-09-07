@@ -20,7 +20,7 @@ stdint.h
 limits
 -
 
-/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo.cpp
+/home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo.cpp
 stdio.h
 -
 string.h
@@ -36,7 +36,7 @@ poll.h
 signal.h
 -
 hokuyo/hokuyo.h
-/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo/hokuyo.h
+/home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo/hokuyo.h
 algorithm
 -
 time.h
@@ -44,7 +44,7 @@ time.h
 fcntl.h
 -
 ros/console.h
-/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/libhokuyo/ros/console.h
+/home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/libhokuyo/ros/console.h
 sys/time.h
 -
 

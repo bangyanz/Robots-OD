@@ -71,7 +71,7 @@ void charging(Behaviours _Behaviour)
 				// now we can change states
 				robotState = NotCharging; 
 				robotBehaviour = Awake; 
-				//ROS_INFO("Status = Charging"); 
+				ROS_INFO("Status = Not Charging"); 
 			}
 			break;	
 	}
@@ -136,8 +136,9 @@ void bumpReaction(Behaviours _Behaviour)
 			else if (isBumpRight)
 				Twistmsg.angular.z = 45;
 			else if (isObjectDetected)
-				Twistmsg.angular.z = 45;
-			
+			{
+				Twistmsg.angular.z = 20;
+			}
 
 			
 			robotState = Moving; 
@@ -202,7 +203,7 @@ int main(int argc, char **argv)
 	ros::Subscriber sub = n.subscribe("sensorPacket", 1000, chatterCallback);
 	
 	// Create subscriber to listen to messages on "/scan" topic
-	ros::Subscriber hokuyoSubscriber = n.subscribe("/scan", 1, scanValues);	
+	ros::Subscriber hokuyoSubscriber = n.subscribe("/scan", 100, scanValues);	
 
 	// Create Publisher to send messages on "cmd_vel" channel
 	// Set buffer size to 20
@@ -216,7 +217,7 @@ int main(int argc, char **argv)
 		
 
 		// stop if charged
-		ROS_INFO("Status = %i", robotState); 
+		ROS_INFO("Status = %i", robotState); 	
 		if (isCharging)
 		{
 			// now we can change states
@@ -226,7 +227,7 @@ int main(int argc, char **argv)
 			Twistmsg.angular.z = 0; 
 		}
 		
-		// check states
+
 		switch (robotState)
 		{
 			case Charging:
@@ -240,20 +241,21 @@ int main(int argc, char **argv)
 				break;
 			case BumpReaction:
 				bumpReaction(robotBehaviour); 
+				break;
 			
 		}
 
 
 
-		// publish message
+		// publish message		
 		pub.publish(Twistmsg);
 		
 		// Send/Look for messages 
-		ros::spinOnce();
-		
 		loop_rate.sleep();
-	}
 
+		ros::spinOnce();
+	}
+	
 	ros::spin();
 
 	return 0;

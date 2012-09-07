@@ -1,4 +1,4 @@
-# Install script for directory: /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src
+# Install script for directory: /home/robolab2/ros/Robots-OD/ros/hokuyo_node/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,10 +34,10 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/src/libhokuyo/cmake_install.cmake")
-  INCLUDE("/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/src/node/cmake_install.cmake")
-  INCLUDE("/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/src/utils/cmake_install.cmake")
-  INCLUDE("/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/src/test/cmake_install.cmake")
+  INCLUDE("/home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/src/libhokuyo/cmake_install.cmake")
+  INCLUDE("/home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/src/node/cmake_install.cmake")
+  INCLUDE("/home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/src/utils/cmake_install.cmake")
+  INCLUDE("/home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/src/test/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

@@ -3,7 +3,7 @@
 
 src/libhokuyo/CMakeFiles/libhokuyo.dir/hokuyo.o
  ../include/hokuyo/hokuyo.h
- /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo.cpp
+ /home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/libhokuyo/hokuyo.cpp
  /opt/ros/fuerte/include/ros/console.h
  /opt/ros/fuerte/include/ros/duration.h
  /opt/ros/fuerte/include/ros/exception.h

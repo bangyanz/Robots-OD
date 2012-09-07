@@ -20,9 +20,9 @@ stdint.h
 limits
 -
 
-/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/utils/getID.cpp
+/home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/utils/getID.cpp
 hokuyo/hokuyo.h
-/home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/utils/hokuyo/hokuyo.h
+/home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/utils/hokuyo/hokuyo.h
 stdio.h
 -
 ros/console.h

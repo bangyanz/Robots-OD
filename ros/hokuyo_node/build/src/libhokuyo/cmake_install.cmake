@@ -1,4 +1,4 @@
-# Install script for directory: /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/src/libhokuyo
+# Install script for directory: /home/robolab2/ros/Robots-OD/ros/hokuyo_node/src/libhokuyo
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

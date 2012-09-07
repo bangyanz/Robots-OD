@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node
+CMAKE_SOURCE_DIR = /home/robolab2/ros/Robots-OD/ros/hokuyo_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build
+CMAKE_BINARY_DIR = /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build
 
 # Utility rule file for ROSBUILD_gencfg_cpp.
 
@@ -246,7 +246,7 @@ CMakeFiles/ROSBUILD_gencfg_cpp: ../src/hokuyo_node/cfg/HokuyoConfig.py
 ../cfg/cpp/hokuyo_node/HokuyoConfig.h: /opt/ros/fuerte/lib/python2.7/dist-packages/genpy/generator.py
 ../cfg/cpp/hokuyo_node/HokuyoConfig.h: /opt/ros/fuerte/stacks/driver_common/driver_base/src/driver_base/msg/_SensorLevels.py
 ../cfg/cpp/hokuyo_node/HokuyoConfig.h: /opt/ros/fuerte/lib/python2.7/dist-packages/rosbag/__init__.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../cfg/cpp/hokuyo_node/HokuyoConfig.h, ../docs/HokuyoConfig.dox, ../docs/HokuyoConfig-usage.dox, ../src/hokuyo_node/cfg/HokuyoConfig.py, ../docs/HokuyoConfig.wikidoc"
 	../cfg/Hokuyo.cfg
 
@@ -276,6 +276,6 @@ CMakeFiles/ROSBUILD_gencfg_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gencfg_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_gencfg_cpp.dir/depend:
-	cd /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build /home/robolab3/rosSummerWork/Robots-OD/ros/hokuyo_node/build/CMakeFiles/ROSBUILD_gencfg_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robolab2/ros/Robots-OD/ros/hokuyo_node /home/robolab2/ros/Robots-OD/ros/hokuyo_node /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build /home/robolab2/ros/Robots-OD/ros/hokuyo_node/build/CMakeFiles/ROSBUILD_gencfg_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gencfg_cpp.dir/depend
 
